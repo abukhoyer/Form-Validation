@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <header class="signupHeader">
+                <h1>Sing Up</h1>
+            </header>
+            <main class="signupBody">
+                <form action="#">
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Type Name here" id="name" >
+                        <i class="fa-solid "></i>
+                        <span id="nameError"></span>
+                    </p>
+
+                    <p>
+                        <label for="Email">Gmail</label>
+                        <input type="email" placeholder="abc@gmail.com" id="Email" >
+                        <i class="fa-solid "></i>
+                        <span id="emailError"></span>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="At least 8 characters" id="password" >
+                        <i class="fa-solid "></i>
+                        <span id="passError"></span>
+                    </p>
+                    <p>
+                        <input type="submit" value="Create Account" id="submitBtn">
+                    </p>
+
+                </form>
+            </main>
+            <footer class="signupFooter">
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
